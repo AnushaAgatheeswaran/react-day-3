@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+    var obj1= {};
+    var obj2 = new Object();
+    var obj3 = Object.create(null);
+    Object.defineProperty(obj3, "title", {
+        value : "Ironman",
+        writable : true,
+        enumerable : true,
+        configurable : true
+    })
+    console.log(obj3.title)
+    obj3.title = "Spiderman"
+    console.log(obj3.title)
+    for (prop in obj3){
+        console.log(prop, obj3[prop])
+    }
+    console.log(Object.keys(obj3))
+Object.defineProperty(obj3, "title",{
+        value : "BatMan",
+        writable : false,
+        enumerable : false,
+        configurable : false
+    })
+    console.log(obj3.title)
+    obj3.title = "Spiderman"
+    console.log(obj3.title)
+    for (prop in obj3){
+        console.log(prop, obj3[prop])
+    }
+   console.log(Object.keys(obj3))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
