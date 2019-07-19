@@ -1,0 +1,97 @@
+Day2 :
+
+Node jS:
+compiles on server side - js nodejs
+
+V8 engine, lib vue takes js to C/ C++
+MEAN stack
+
+Modules: self contained 
+
+express - create web server - combination of connect js and http of node js
+
+
+let express = require("express");
+let app = express();
+app.listen(3030);
+console.log("server live on 3030 ")
+
+
+Middleware - inbetween request and response
+
+Traceur - change ES6 to older version
+Include below to use traceur
+<script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
+    <script src="https://google.github.io/traceur-compiler/bin/BrowserSystem.js"></script>
+    <script src="https://google.github.io/traceur-compiler/src/bootstrap.js"></script>
+
+	
+React:
+developed by facebook
+
+learn in forums to get updated
+jsconf forum
+oreily forum
+jsfoo forum
+
+To install react
+npm install -g create-react-app
+
+To check if react is installed : create-react-app -V
+
+Create a react file : create-react-app firstapp
+
+
+Libraries:
+React - build components and communicate
+React dom - renders components
+React -scripts - takes our file put into babble and get a minified version
+
+by default : react uses port 3000
+
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  
+Nested React.createElement can be done by JSX as below:
+
+let elm = <ol>
+    <li>{heros[0]}</li>
+    <li>{heros[1]}</li>
+    <li>{heros[2]}</li>
+    <li>{heros[3]}</li>
+</ol>
+
+
+elements -> components -> compositions
+
+react port change 
+node_modules/react-scripts/scripts/start.js
+
+Immutability:
+
+Object.create - creates immutable objects
+
+
+null is assigned by user implicit, undefined is assigned by compiler explicit
+
+
+why are we accesing prop as array - for in loop
+
+
+React , Angular - intrusive framwork = cant be decoupled when not neede
+Backbone - non-intrusive framwork
+
+
+Canary is a web developer browser
+
+States are mutable.. can be modified by the same component
+
+npm i react-router-dom --save  : save the react-router module in modules
+
+flux simplified to redux
+
+fb created context api- which stores all the info
+
+ContextProvider  and ContextConsumer can provide and consume only 1 value at a time
+
+
+
